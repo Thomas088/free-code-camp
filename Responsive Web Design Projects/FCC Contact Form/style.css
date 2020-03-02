@@ -1,0 +1,98 @@
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(https://hosportal.com/wp-content/uploads/home_banner@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 150vh;
+}
+
+
+.main-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+#title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#survey-form {
+  margin-top: 2rem;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  background-color: rgba(100, 100, 176, 0.55);
+}
+
+.name-field, .email-field, .age-field, .function-field, .degrees-field, .experience-field{
+   padding-bottom: 1rem; 
+}
+
+.name-field label,
+.name-field input,
+.email-field label,
+.email-field input,
+.age-field label,
+.age-field input
+{
+  display: block;
+}
+
+
+.name-field input,
+.email-field input,
+.age-field input
+{
+  width: 95%;
+}
+
+#survey-form label, #survey-form p {
+  padding-bottom: 0.7rem;
+}
+
+[type="number"] {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+.dropdown {
+  width: 95%;
+}
+
+.label-message {
+  display: block;
+}
+
+.btn-confirm {
+  width: 95%;
+  padding: 0.7rem 0;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(100, 100, 176);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+textarea {
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+  width: 95%;
+  height: 10rem;
+}

@@ -1,0 +1,189 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p, li, a {
+  font-family: 'Sulphur Point', sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: #9b59b6;
+}
+
+.navbar ul {
+  float: right;
+}
+
+.navbar li {
+ list-style-type: none;
+ float: left;
+ padding: 1.5em;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.projects h3 {
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 8rem;
+}
+
+.tile-container {
+  width: 60%;
+  margin: 5rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
+  grid-gap: 2.5rem;
+  justify-content: center;
+}
+
+.project-tile {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-box-shadow: 6px 8px 12px -6px rgba(0,0,0,0.64);
+-moz-box-shadow: 6px 8px 12px -6px rgba(0,0,0,0.64);
+box-shadow: 6px 8px 12px -6px rgba(0,0,0,0.64);
+  transition: all 0.085s linear;
+}
+
+.project-tile:hover {
+  transform: scale(1.01);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-link {
+  padding: 1rem 0;
+  background-color: #9b59b6;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 0.6rem 4rem;
+  border: 1px solid rgba(155, 89, 182, 0.35);
+  background: rgba(155, 89, 182, 0.25);
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.150s linear;
+}
+
+.show-more-btn:hover {
+  background: rgba(155, 89, 182, 0.55);
+}
+
+.contact {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact ul {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.contact li {
+  margin: 0 0.8rem;
+}
+
+.contact i {
+  margin-right: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid rgba(155, 89, 182, 0.55);
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  body {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .tile-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+

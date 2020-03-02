@@ -1,0 +1,111 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<html>
+  <body>
+    <div class="main-container">
+      <h1 id="title">Formulaire de contact</h1>
+      <p id="description">Contactez nous via ce formulaire, nous vous répondrons le plus vite possible </p>
+      <form id="survey-form" action="" method="">
+        
+        <div class="name-field">
+          <label for="name" id="name-label">Nom</label>
+          <input type="text" name="name" id="name" placeholder="Entrez votre nom" required>               </input>
+        </div>
+      
+        <!-- <div class="name-field">
+          <label for="second-name">Prénom</label>
+          <input type="text" name="name" id="second-name" placeholder="Entrez votre prenom">               </input>
+        </div> -->
+      
+        <div class="email-field">
+          <label for="email" id="email-label">Mail</label>
+          <input type="email" name="name" id="email" placeholder="Entrez votre adresse email" required>               </input>
+        </div>
+  
+        <div class="age-field">
+          <label for="number" id="number-label"> Age </label>
+          <input type="number" name="number" id="number" min="12" max="90" placeholder="Entrez votre age" required></input>
+        </div> 
+
+        <div class="function-field">   
+          <p>Quel est votre poste principal ?<p>
+
+          <select name="poste" id="dropdown" class="dropdown">
+            <option value="infirmier">Infirmier</option>
+            <option value="aide-soignant">Aide-soignant</option>
+            <option value="brancardier" selected>Brancardier</option>
+            <option value="docteur">Docteur</option>
+            <option value="pharmacien">Pharmacien</option>
+            <option value="kinésithérapeute">Kinésithérapeute</option>
+            <option value="dieteticien">Diététicien</option>
+          </select>
+        </div>
+    
+        <div class="experience-field">
+          <p>Vos années d'expérience au sein de ce poste :</p>
+
+          <div class="choices-exp">
+            <input type="radio" id="exp" name="exp" value="less-than-one-year"></input>
+            <label for="exp">- de 1 an</label>
+          </div>
+
+          <div class="choices-exp">
+            <input type="radio" id="exp" name="exp" value="more-than-one-year"></input>
+            <label for="exp">+ de 1 an</label>
+          </div>
+
+          <div class="choices-exp">
+             <input type="radio" id="exp" name="exp" value="more-than-two-years"></input>
+             <label for="exp">+ de 2 an</label>
+          </div>
+
+         <div class="choices-exp">
+            <input type="radio" id="exp" name="exp" value="more-than-five-years"></input>
+            <label for="exp">+ de 5 an</label> 
+         </div> 
+        </div>
+      
+        <div class="degrees-field">
+            <p> Vos diplomes dans le métier :</p>
+              
+            <div class="choices-degree">
+              <input type="checkbox" name="degree" value="bts">
+              <label for="degree" value="bts">Bac +2 (BTS)</label>
+            </div>
+            
+            <div class="choices-degree">
+              <input type="checkbox" name="degree" value="bachelor">
+              <label for="degree" >Bac +3 (License)</label>
+            </div>
+           
+            <div class="choices-degree">
+              <input type="checkbox" value="master">
+              <label for="degree">Bac +5 (Master)</label>
+            </div>
+              
+            <div class="choices-degree">
+              <input type="checkbox" value="phd">
+              <label for="degree">Bac +8 (Doctorat)</label>
+           </div>
+        </div>
+  
+      <div class="message-field">
+        <label for="message" class="label-message">Message</label>
+        <textarea name="message" id="message" placeholder="Votre message" ></textarea>
+      </div>
+<input type="submit" value="Envoyer le formulaire" id="submit" class="btn-confirm"> </input>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->

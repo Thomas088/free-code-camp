@@ -1,0 +1,16 @@
+function fiboEvenSum(n) {
+
+  const arr = [0, 1];
+
+  for(let i = 2; i <= n; i++) {
+    let a = arr[i - 1];
+    let b = arr[i - 2];
+    arr.push(a + b)
+  }
+   return arr.filter((n) => n % 2 === 0)
+             .filter((elt) => elt <= n)
+             .reduce((total, n) => total + n, 0) 
+                        
+}
+
+fiboEvenSum(1000);
