@@ -14,6 +14,7 @@ function addTogether() {
         }     
       }
     } else {
+      // IF WE HAVE 1 PARAMETER (ARRAY OF PARAMETERS)
      test = [...arguments].every((elt) => typeof elt === 'number')    
      if (test) {
      let arg1 = [...arguments].reduce((c, d) => c + d, 0)
