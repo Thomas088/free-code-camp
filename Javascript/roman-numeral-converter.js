@@ -48,8 +48,6 @@ function convertToRoman(num) {
 
   }
 
-  // const result = [];
-
   // Décortique le nombre et on l'inverse pour trier facilement des unites au miliers
 
   const splited = num.toString()
@@ -61,7 +59,8 @@ function convertToRoman(num) {
   // On le multipliera par 10 a chaque tour.
   let multiplier = 1 
   
-
+  
+  // On remplace tout les items
   for(let i = 0; i < splited.length; i++) {
     splited[i] = splited[i] * multiplier;
     replaceToRoman(splited[i], splited); 
