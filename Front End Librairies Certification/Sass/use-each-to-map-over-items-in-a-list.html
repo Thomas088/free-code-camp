@@ -1,0 +1,27 @@
+<style type='text/scss'>
+
+/* Solution is here */
+$listColors: (var1: blue, var2: black, var3: red);
+
+@each $key, $i in $listColors {
+  .#{$i}-bg {
+    border: 5px solid black; 
+    background-color: $i;
+  }
+}
+
+/* Optional - sandbox */
+body {
+  display: flex;
+}
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
