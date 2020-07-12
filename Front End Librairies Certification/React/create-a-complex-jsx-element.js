@@ -7,4 +7,4 @@ const JSX = (<div>
                   <li>list</li>
                   <li>list</li>
                 </ul>
-            </div> )
+            </div>)
