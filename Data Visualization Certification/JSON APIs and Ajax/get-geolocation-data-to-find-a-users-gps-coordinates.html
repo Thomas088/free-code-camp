@@ -1,0 +1,16 @@
+<script>
+  // Solution is here
+
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      document.getElementById("data").innerHTML = 
+      `<b> Latitude </b> : ${position.coords.latitude} <br>
+       <b> Longitude </b> : ${position.coords.longitude}`;
+    })
+  }
+
+</script>
+<h4>You are here:</h4>
+<div id="data">
+
+</div>
