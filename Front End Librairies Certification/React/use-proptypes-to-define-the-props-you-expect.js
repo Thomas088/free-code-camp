@@ -2,11 +2,9 @@ const Items = (props) => {
   return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
 };
 
-// change code below this line
+// Solution is here
 
 Items.propTypes = { quantity: PropTypes.number.isRequired }
-
-// change code above this line
 
 Items.defaultProps = {
   quantity: 0
