@@ -11,7 +11,7 @@ class MyComponent extends React.Component {
   // Solution is here
   toggleVisibility(){
     this.setState(state => {
-      state.visibility = !state.visibility
+      state.visibility = !state.visibility;
     })
   }
 
