@@ -1,5 +1,5 @@
 //Setup
-var contacts = [
+const contacts = [
     {
         "firstName": "Akira",
         "lastName": "Laine",
@@ -28,7 +28,7 @@ var contacts = [
 
 function lookUpProfile(name, prop){
 
-    for (var i = 0; i < contacts.length; i++) { 
+    for (let i = 0; i < contacts.length; i++) { 
         if (name === contacts[i]["firstName"]) {
             if (contacts[i][prop]) {
                 return contacts[i][prop];

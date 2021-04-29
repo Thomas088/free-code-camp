@@ -1,5 +1,5 @@
 // the global variable
-var watchList = [
+const watchList = [
   {
     "Title": "Inception",
     "Year": "2010",
@@ -113,7 +113,7 @@ var watchList = [
 ];
 
 // Add your code below this line
-var filteredList = [];
+let filteredList = [];
 watchList.map(elt => filteredList.push({"title": elt["Title"], "rating" : elt["imdbRating"]}));
 filteredList = filteredList.filter(val => parseFloat(val["rating"]) >= 8.0);
 // Add your code above this line

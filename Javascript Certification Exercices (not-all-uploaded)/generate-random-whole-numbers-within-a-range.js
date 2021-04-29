@@ -13,4 +13,4 @@ function randomRange(myMin, myMax) {
 }
 
 // Change these values to test your function
-var myRandom = randomRange(5, 15);
+const myRandom = randomRange(5, 15);
