@@ -20,7 +20,7 @@ function getIndexToIns(arr, num) {
    arr.sort(compare)
 
   // Round Up
-  let roundUp = function(num, precision) {
+  let roundUp = (num, precision) => {
     num = parseFloat(num);
     if (!precision) return num;
       return Math.round(num / precision) * precision ;

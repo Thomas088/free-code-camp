@@ -12,8 +12,6 @@ for (let i = 0, n = this.length; i <= n; i++) {
   return newArray;
 };
 
-const new_s = s.myFilter(function(item){
-  return item % 2 === 1;
-});
+const new_s = s.myFilter(item => item % 2 === 1);
 
 console.log(new_s);

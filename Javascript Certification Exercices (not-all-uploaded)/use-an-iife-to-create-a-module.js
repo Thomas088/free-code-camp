@@ -1,15 +1,13 @@
 let funModule = (() => {
   return { 
-    isCuteMixin: function(obj) {
-    obj.isCute = function() {
-      return true;
-    };
+    isCuteMixin: obj => {
+    obj.isCute = () => true;
   },
-    singMixin: function(obj) {
-    obj.sing = function() {
+    singMixin: obj => {
+    obj.sing = () => {
       console.log("Singing to an awesome tune");
     };
   }
-}
+};
 })()
 

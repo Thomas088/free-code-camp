@@ -10,8 +10,6 @@ Array.prototype.myMap = function(callback){
   return newArray;
 };
 
-const new_s = s.myMap(function(item){
-  return item * 2;
-});
+const new_s = s.myMap(item => item * 2);
 
 console.log(new_s)
