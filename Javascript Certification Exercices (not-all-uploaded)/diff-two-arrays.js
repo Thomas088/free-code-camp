@@ -1,9 +1,7 @@
 function diffArray(arr1, arr2) {
 
    let concat = arr1.concat(arr2);
-   let filtered = concat.filter(function (value) {
-     return !(concat.indexOf(value) !== concat.lastIndexOf(value))
-   })
+   let filtered = concat.filter(value => !(concat.indexOf(value) !== concat.lastIndexOf(value)))
      
   return filtered; 
 }

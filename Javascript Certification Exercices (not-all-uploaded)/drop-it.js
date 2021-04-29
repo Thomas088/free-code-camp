@@ -10,4 +10,4 @@ function dropElements(arr, func) {
 
 }
 
-dropElements([1, 2, 3, 7, 4], function(n) {return n < 3; });
+dropElements([1, 2, 3, 7, 4], n => n < 3);

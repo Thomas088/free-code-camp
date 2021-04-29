@@ -1,5 +1,1 @@
-const MyComponent = function() {
-
-  // Solution is here
-return (<div> <p>React Test</p> </div>)
-}
+const MyComponent = () => <div> <p>React Test</p> </div>
