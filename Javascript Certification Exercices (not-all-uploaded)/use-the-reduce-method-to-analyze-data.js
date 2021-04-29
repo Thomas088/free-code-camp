@@ -1,5 +1,5 @@
 // the global variable
-var watchList = [
+const watchList = [
   {
     "Title": "Inception",
     "Year": "2010",

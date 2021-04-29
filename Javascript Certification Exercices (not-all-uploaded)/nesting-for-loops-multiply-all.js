@@ -1,9 +1,9 @@
 function multiplyAll(arr) {
 
-  var product = 1;
+  let product = 1;
 
-  for (var i=0; i < arr.length; i++) {
-    for (var j=0; j < arr[i].length; j++) {
+  for (let i=0; i < arr.length; i++) {
+    for (let j=0; j < arr[i].length; j++) {
      product =  product * arr[i][j];
   }
 }

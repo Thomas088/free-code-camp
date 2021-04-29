@@ -1,4 +1,4 @@
-var Person = function(firstAndLast) {
+const Person = function(firstAndLast) {
   
 let splited = firstAndLast.split(" ");
 let firstName;

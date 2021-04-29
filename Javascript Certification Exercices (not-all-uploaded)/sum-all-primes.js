@@ -1,8 +1,8 @@
 function sumPrimes(num) {
- var sieve = [], 
-            i, 
-            j, 
-            primes = [];
+ let sieve = [],
+     i,
+     j,
+     primes = [];
   
     for (i = 2; i <= num; ++i) {
         if (!sieve[i]) {
